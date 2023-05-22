@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Luckiest+Guy&family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 4rem;
+    height: 40vh;
+    background-image: url(../img/background-header.png);
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: #000000;
+}
+
+#characters {
+    padding: 6.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.character div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.character input {
+    display: none;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 4px;
+    font-family: Pangolin;
+    background-color: black;
+    padding: 12px;
+    box-shadow: 3px 3px 3px 1px rgba(23, 23, 23, 0.688);
+}
+
+h2 {
+    font-size: 1.26em;
+    color: aliceblue;
+}
+
+div p {
+    font-family: 'Arial Narrow';
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: #0a749a;
+}
+
+.data span {
+    color: #e1d602;
+    font-family: Verdana;
+    font-weight: 400;
+}
+
+p.data {
+    color: rgb(255, 255, 255);
+    font-family: Courier;
+}
+
+.main-tittle {
+    display: flex;
+    font-size: 6rem;
+    font-family: Creepster;
+    color: rgba(32, 142, 13, 0.94);
+}
+
+.alive {
+    width: 14px;
+    height: 14px;
+    background-color: #297a18;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.dead {
+    width: 14px;
+    height: 14px;
+    background-color: #7a1818;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.unknown {
+    width: 14px;
+    height: 14px;
+    background-color: #c2c51a;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.lds-ring {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 5px solid rgba(45, 45, 45, 0.451);
+    border-radius: 50%;
+    animation: spin 0.8s ease infinite;
+    border-left-color: rgb(32, 142, 13, 0.94);
+}
+
+.btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.bt {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: Pangolin;
+    text-align: center;
+    background-color: rgba(32, 142, 13, 0.94);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 9px rgba(0, 0, 0, 0.641);
+}
+
+.bt:hover {
+    background-color: #5a905c
+}
+
+.bt:active {
+  background-color: #16881a;
+  box-shadow: 0 5px #605e5e;
+  transform: translateY(4px);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: Luckiest Guy;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    color: aliceblue;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
